@@ -1,0 +1,96 @@
+.trending
+  padding-bottom: 95px
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__top
+    margin-bottom: 48px
+  &__title
+    font-family: HK Grotesk
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    letter-spacing: 0.2px
+  &-cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    display: none
+    &_active
+      display: flex
+  &__card
+    margin-bottom: 50px
+.tabs
+  display: flex
+  align-items: center
+  list-style: none
+  padding: 0
+  &__item
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: $text-color-light
+    margin-right: 38px
+    cursor: pointer
+    &_active
+      font-weight: bold
+      color: $text-color
+    &:last-child
+      margin-right: 0
+.card
+  width: 260px
+  height: 441px
+  cursor: pointer
+  &__image
+    width: 100%
+    height: 350px
+    object-fit: cover
+    border-radius: 8px
+    margin-bottom: 20px
+  &__title
+    font-family: HK Grotesk
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    margin: 0 10px 3px 10px
+  &__price
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 0 10px
+  &__pricetag
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $text-color-light
+  &__icon
+    width: 23px
+    height: 32px
+  &-more
+    width: 260px
+    height: 350px
+    background-color: $blue
+    border-radius: 8px
+    padding: 120px 74px 104px
+    cursor: pointer
+    &__link
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      height: 100%
+    &__icon
+      width: 28px
+      height: 37px
+      display: block
+    &__title
+      font-family: HK Grotesk
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      color: $light
+      text-align: center

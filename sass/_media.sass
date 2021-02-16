@@ -1,0 +1,591 @@
+@media (min-width:1024px)  
+  .navbar
+    &-button   
+      &:hover
+        color: $light
+        background-color: $blue
+  .menu
+    &__link
+      &:after 
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        width: 0
+        height: 3px
+        background-color: $green
+        transition: width 0.3s ease-out
+      &:hover
+        &:after
+          width: 100%
+      &:focus
+        &:after 
+          width: 100%
+  .hero
+    &__button
+      &:hover
+        background-color: $green
+        color: $light
+        border-color: $green
+  .subscribe
+    &__button
+      &:hover 
+        background-color: #36B37E;
+        color: #ffffff;
+        border-color: #36B37E;
+
+@media screen and ( max-width: 1440px )
+  .hero
+    &-container
+      max-width: 90%
+
+@media screen and ( max-width: 1200px )
+  .container
+    max-width: 960px
+  .hero
+    &__subtitle
+      max-width: 520px
+  .collection
+    &-gallery
+      width: 555px
+      height: 480px
+    &-text
+      width: 370px
+    &__foto
+      width: 270px
+      height: 233px
+      &_big
+        width: 270px
+        height: 100%  
+  .card
+    width: 215px
+    &-more
+      width: 215px   
+      padding: 120px 47px 104px;   
+  .stories
+    &-slider
+      &__card
+        width: 270px
+      &__text
+        width: 270px  
+  .newsletter
+    &__subtitle
+      max-width: 430px
+ 
+@media screen and ( max-width: 992px ) 
+  .container
+    max-width: 672px
+  .navbar
+    background-color: $light
+    &_mobile
+      &_fixed
+        position: fixed
+        top: 0
+        right: 0
+        left: 0
+        z-index: 99   
+  body 
+    padding-top: 101px
+  .navbar
+    padding-bottom: 0
+    &-navigation
+      display: none
+      flex-direction: column
+      align-items: center
+      position: fixed
+      left: 8px
+      right: 8px
+      bottom: 10px
+      top: 10px
+      padding: 36px 22px
+      height: 380px
+      overflow: scroll
+      background-color: $light
+      opacity: 0
+      transition: opacity 0.5s
+      &_visible
+        display: flex
+        opacity: 1
+      &__navbar-menu
+        margin: 0
+      &__navbar-button
+        width: 256px
+  .menu
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__item
+      margin-right: 0
+      margin-bottom: 20px
+    &-button
+      display: flex
+      position: relative;
+      width: 22px;
+      height: 2.2px;
+      background-color: #3A4C66
+      border-radius: 50px
+      cursor: pointer
+      &:before 
+        position: absolute;
+        left: 0;
+        top: -7px;
+        content: '';
+        width: 22px;
+        height: 2.2px;
+        background-color: #3A4C66
+        border-radius: 50px
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      &:after 
+        position: absolute;
+        left: 0;
+        top: 7px;
+        content: '';
+        width: 22px;
+        height: 2.2px;
+        background-color: #3A4C66
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+      &_active
+        background-color: transparent
+        &:before 
+          transform: rotate(45deg);
+          top: 0;
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        &:after 
+          transform: rotate(-45deg);
+          top: 0;
+          transition: top 0.2s linear, transform 0.2s ease-in 0.2s
+  .hero
+    padding-bottom: 80px
+    &-container
+      max-width: 95%
+    &-wrapper
+      padding: 36px 28px 44px 28px
+      background-position: right 35% bottom 50%
+    &__info
+      margin-bottom: 24px
+    &__title
+      font-size: 48px;
+      line-height: 60px;
+      max-width: 407px
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 18px;
+      line-height: 32px;
+      max-width: 400px
+      margin-bottom: 34px
+    &__button
+      margin-bottom: 29px  
+  .collection
+    padding-bottom: 27px
+    &-wrapper
+      flex-direction: column
+    &-gallery
+      width: 672px
+      height: 490px
+    &__gallery
+      margin-bottom: 40px  
+    &-text
+      width: 100%
+    &__foto
+      width: 320px
+      height: 230px
+      &_big
+        width: 322px
+        height: 100%
+    &__title
+      margin-bottom: 18px  
+    &__subtitle
+      margin-bottom: 18px
+  .trending
+    padding-bottom: 32px
+    &-cards
+      max-width: 608px;
+      margin: auto;
+    &-top
+      flex-direction: column
+    &__top
+      margin-bottom: 54px  
+    &__title
+      margin-bottom: 28px
+    &__card
+      margin-bottom: 48px      
+  .card
+    width: 280px
+    &-more
+      width: 280px
+  .testimonial
+    padding-bottom: 59px
+    &-slider
+      &__item
+        max-width: 630px
+      &__icon
+        margin-bottom: 12px
+      &__text
+        margin-bottom: 36px
+      &__name
+        margin-bottom: 65px    
+  .stories
+    padding-bottom: 80px
+    &-text
+      width: 100%
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__info
+      margin-bottom: 24px  
+    &__title
+      max-width: 100%
+      margin-bottom: 16px
+    &__subtitle
+      max-width: 510px
+      margin-bottom: 36px
+      text-align: center    
+    &-wrapper
+      flex-direction: column
+      align-items: center
+      padding-top: 80px
+    &-slider
+      width: 672px
+      &__card
+        width: 322px
+      &__text
+        width: 322px   
+  .newsletter
+    padding: 72px 0 80px
+    &::before
+      bottom: 23%;
+      left: -75%;
+    &::after
+      top: 64%;
+      right: -105%;
+    &-wrapper      
+      flex-direction: column
+    &__title
+      margin-bottom: 14px
+      text-align: center
+    &__subtitle
+      max-width: 486px
+      text-align: center  
+    &__text
+      margin-bottom: 56px    
+  .footer
+    padding: 64px 0
+    &-wrapper
+      justify-content: space-between;
+    &__wrapper
+      margin-bottom: 42px
+    &-list
+      &-wrapper    
+        flex-wrap: wrap
+        width: 56%
+    &__list    
+      width: 50%
+      &:nth-child(1),
+      &:nth-child(2)
+        margin-bottom: 24px  
+  .info
+    &-block
+      width: 40%    
+
+
+
+
+      
+@media screen and ( max-width: 767px )
+  .container
+    width: 88%
+  .hero
+    &-wrapper
+      padding: 56px 65px 35px 28px;
+    &__subtitle
+      margin-bottom: 28px
+    &__button
+      margin-bottom: 38px    
+  .collection
+    &-gallery
+      flex-direction: column
+      width: 100%
+      height: 412px
+    &__foto
+      width: 48%
+      height: 98px
+      &_big
+        width: 100%
+        height: 300px  
+  .gallery
+    &-wrapper 
+      flex-direction: row;
+  .trending
+  .card
+    width: 48%
+    height: 441px
+    &-more
+      width: 48%   
+  .tabs
+    &__item
+      font-size: 16px;
+      line-height: 22px;
+      margin-right: 16px
+  .stories
+    &-slider 
+      width: 100%
+      &__card
+        width: 48%
+      &__text
+        width: 100%
+      &__title
+        font-size: 20px    
+  .footer
+    &-list
+      &-wrapper
+        width: 65%     
+
+    
+@media screen and ( max-width: 576px )
+  body
+    padding-top: 83px
+  .container
+    width: 91%   
+  .hero
+    padding-bottom: 62px
+    &-container
+      max-width: 100%
+    &-wrapper
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 380px 15px 36px 15px;
+      background-image: url(../img/hero-image-bg-mobile.jpg); 
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      background-color: #e8eae9
+    &__button
+      margin-bottom: 11px
+    &__info
+      margin-bottom: 20px
+    &__title
+      max-width: 100%
+      text-align: center
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 20px
+    &__subtitle
+      max-width: 100%
+      text-align: center
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 24px 
+  .benefit
+    flex-wrap: wrap
+    justify-content: center;
+    align-items: center;
+    max-width: 270px
+    min-height: 64px
+    &__item 
+      &:nth-child(1)
+        margin-right: 16px
+    &__icon
+      width: 15px
+      height: 15px
+      border: 0.75px solid #1565D8
+      border-radius: 12px
+      padding: 5px 5px
+    &__text
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 8px
+  .collection
+    padding-bottom: 24px
+    &-text
+      align-items: center
+    &__title
+      font-size: 28px;
+      line-height: 36px;
+    &__subtitle
+      text-align: center;
+      font-size: 16px;
+      line-height: 28px;
+    &__link
+      font-size: 16px;
+      line-height: 22px;
+      width: 210px    
+    &__gallery  
+      margin-bottom: 36px
+    &__title
+      margin-bottom: 16px
+    &__subtitle
+      margin-bottom: 24px
+  .trending
+    padding-bottom: 30px
+    &__top
+      margin-bottom: 36px
+    &__title
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 24px  
+    &__card
+      margin-bottom: 20px
+  .card
+    height: 234px
+    &__title
+      font-size: 16px;
+      line-height: 20px;
+      margin-left: 0
+      margin-bottom: 0
+    &__image
+      height: 170px
+      margin-bottom: 13px
+    &__price  
+      max-width: 59px
+      margin: 0
+    &__pricetag
+      font-size: 14px;
+      line-height: 24px;
+    &__icon
+      width: 14px
+      height: 32px   
+    &-more
+      height: 170px
+      padding: 40px 23px 29px 24px
+      &__icon
+        width: 25px
+        height: 32px
+      &__title
+        font-size: 20px;
+        line-height: 24px;
+  .testimonial
+    &-slider
+      &__icon
+        width: 70px
+        height: 81px
+        margin-bottom: 13px
+      &__text
+        font-size: 18px;
+        line-height: 36px;
+        margin-bottom: 60px
+      &__name
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 40px
+        max-width: 161px
+  .stories
+    padding-bottom: 64px
+    &__text
+      margin-bottom: 26px
+    &__info
+      margin-bottom: 26px
+    &__title
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 16px
+    &__subtitle
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 36px
+    &__buttons
+      width: 112px 
+    &__button 
+      width: 48px;
+      height: 48px;
+      &_prev,
+      &_next
+        background-size: 13px 16px
+    &-wrapper
+      padding-top: 30px
+      &-cards
+        flex-direction: column
+    &-slider 
+      width: 100%
+      height: 840px
+      &__card
+        width: 100%
+        height: 407px
+      &__text
+        width: 100%
+      &__title
+        font-size: 20px
+  .newsletter
+    padding: 64px 0 115px
+    &__text
+      margin-bottom: 36px   
+    &__title
+      width: 100%
+      font-size: 28px;
+      line-height: 36px;
+      margin-bottom: 24px
+    &__subtitle
+      width: 100%
+      font-size: 16px;
+      line-height: 28px;
+  .subscribe
+    width: 100%
+    height: 48px
+    &__input
+      width: 100%
+      height: 100%
+      padding-right: 20px
+      border: none
+      outline: none
+      margin-bottom: 10px
+      border-radius: 8px;
+    &__button
+      position: initial
+      width: 100%
+      border-radius: 8px;
+  .footer
+    padding-top: 48px
+    padding-bottom: 64px
+    &__subtitle
+      text-align: center
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 16px
+    &-wrapper
+      flex-direction: column
+    &__wrapper
+      margin-bottom: 0  
+    &-list
+      &-wrapper
+        width: 100%
+    &__list
+      &:nth-child(1),
+      &:nth-child(2)
+        margin-bottom: 28px
+      &-wrapper
+        margin-bottom: 30px  
+            
+    &__title
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 20px
+    &__item
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 15px
+  .logo
+    &__footer
+      margin-bottom: 16px    
+  .info
+    &-block
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 100%
+      order: 1
+  .copyright
+    display: none    
+
+@media screen and ( max-width: 320px )     
+  .navbar    
+    &-navigation
+      align-items: flex-start  
+  .menu
+    align-items: flex-start    
+
+  
+
+    
+
+       
